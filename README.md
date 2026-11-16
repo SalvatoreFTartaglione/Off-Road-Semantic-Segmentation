@@ -137,7 +137,6 @@ pip install jupyter               # only to open the notebooks
 
 ```bash
 python -m pytest                                   # the whole test suite
-python scripts/make_figures.py                     # the figures of this README, in docs/figures/
 python -u -m src.train --experiment B              # one of the experiments of src/config.py (A to F)
 python -u -m src.train --experiment F              # the final network -> outputs/experiment_F/final.pt
 python -u -m src.train --experiment B --resume     # continue an interrupted run
@@ -177,7 +176,6 @@ src/
   train.py       training loop, experiment runner, comparison tools
   predict.py     predict function, post-processing, evaluation
 tests/           206 tests
-scripts/         make_figures.py: regenerates the figures of this README (docs/figures/)
 notebooks/       analysis, training, test
 docs/            written documentation (see below)
 ```
